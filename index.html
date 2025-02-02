@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="icon" href="image/image.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main_container">
+        <nav>
+            <div class="Nav_start">
+                <i class="fa-solid fa-bars toggle_btn"></i>
+                <div class="Nav_start_item">
+                    <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                    <div>YouTube <span>IN</span></div>
+                </div>
+            </div>
+            <div class="Nav_middle">
+                <form class="Form" action="https://www.youtube.com/results">
+                    <div class="Form_item_1">
+                        <input type="text" name="search_query" placeholder="Search">
+                    </div>
+                    <div class="Form_item_2">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="Form_item_3">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="Nav_end">
+                <div class="Nav_end_item">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <div class="Nav_end_item">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="Nav_end_item">
+                    <img src="image/channels4_profile.jpg" class="profile-image" alt="Profile">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="left_section">
+            <div class="side_navbar">
+                <div class="home_section">
+                    <div class="item1">
+                        <i class="fa-solid fa-house"></i>
+                        <div>Home</div>
+                    </div>
+                    <div class="item1">
+                        <i class="fa-solid fa-video"></i>
+                        <div>Shorts</div>
+                    </div>
+                    <div class="item1">
+                        <i class="fa-solid fa-tv"></i>
+                        <div>Subscription</div>
+                    </div>
+                    <hr>
+                    <div class="item2">
+                        <div class="item ">
+                            <div class="fw-bolder">You</div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <div>History</div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div>Playlists</div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-brands fa-youtube"></i>
+                            <div>Youu videos</div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <div>You courses</div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-regular fa-clock"></i>
+                            <div>Watch Later</div>
+                        </div>
+                        <div class="item">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <div>Liked videos</div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="subscriber_section">
+                    <div class="fw-bold pb-2">Subscriptions</div>
+                    <div class="subscriber">
+                        <img src="/image/yt1.jpg" alt="">
+                        <div>Bitcoin Nation</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt2.jpg" alt="">
+                        <div>Englis Speeches</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt3.jpg" alt="">
+                        <div>Sonic Gang</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt4.jpg" alt="">
+                        <div>The WiNNERSS</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt5.jpg" alt="">
+                        <div>Anand Creation</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt6.jpg" alt="">
+                        <div>Animated Stories</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt7.jpg" alt="">
+                        <div>Anish Vora</div>
+                    </div>
+                    <div class="subscriber">
+                        <img src="/image/yt8.jpg" alt="">
+                        <div>Apna College</div>
+                    </div>
+                    <div class="subscriber">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div>Show more</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="explor_section">
+                    <div class="fw-bold pb-2">Explore</div>
+                    <div class="explor">
+                        <i class="fa-solid fa-fire"></i>
+                        <div>Trending</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div>Shopping</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-music"></i>
+                        <div>Music</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <div>Films</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-tower-cell"></i>
+                        <div>Live</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <div>Gaming</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <div>News</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div>Sport</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <div>Courses</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-shirt"></i>
+                        <div>Fashion & Beauty</div>
+                    </div>
+                    <div class="explor">
+                        <i class="fa-solid fa-podcast"></i>
+                        <div>Podcasts</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="moreYoutube_section">
+                    <div class="fw-bold pb-2">More From YouTube</div>
+                    <div class="item">
+                        <i class="fa-brands fa-youtube text-danger"></i>
+                        <div>youTube Premium</div>
+                    </div>
+                    <div class="item">
+                        <img class="" src="/image/yt studio.png" alt="">
+                        <div>youTube Studio</div>
+                    </div>
+                    <div class="item">
+                        <img src="/image/yt music.png" alt="">
+                        <div>youTube Music</div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-brands fa-youtube text-danger"></i>
+                        <div>youTube Kids</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="moreYoutube_section">
+                    <div class="item">
+                        <i class="fa-solid fa-gear"></i>
+                        <div>Settings</div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-flag"></i>
+                        <div>Report history</div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <div>Help</div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-regular fa-message"></i>
+                        <div>Sens feedback</div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="right_section">
+            <div class="top_slider">
+                <ul class="ms-3">
+                    <li class="first_item"><a href="">All</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Jukebox</a></li>
+                    <li><a href="">T-Series</a></li>
+                    <li><a href="">Kumar Sanu</a></li>
+                    <li><a href="">Bhojpuri cinema</a></li>
+                    <li><a href="">Mixes</a></li>
+                    <li><a href="">Arijit Singh</a></li>
+                    <li><a href="">Live</a></li>
+                    <li><a href="">Goddesses</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Lo-fi</a></li>
+                    <li><a href="">Rituals</a></li>
+                    <li><a href="">Gadgets</a></li>
+                    <li><a href="">Bhajan music</a></li>
+                    <li><a href="">Lessons</a></li>
+                    <li><a href="">Recently uploaded</a></li>
+                    <li><a href="">Watched</a></li>
+                    <li><a href="">New to you</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_content mx-3">
+            <div class="row  row-cols-md-2 row-cols-lg-3">
+                <div class="col- p-0 ">
+                    <div class="card">
+                        <img src="/image/card_1.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_2.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_3.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_4.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_5.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_6.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_7.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_8.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col- p-0">
+                    <div class="card">
+                        <img src="/image/card_9.webp" class="card-img-top img-fluid" alt="">
+                        <div class="card-body">
+                            <div class="left_item">
+                                <img src="/image/card image 1.jpg" alt="">
+                            </div>
+                            <div class="middle_item">
+                                <div>#Video | 2024 के न्य दुर्गा पूजा सॉन्ग | #Khesari Lal Yadav | New Devi Geet
+                                    2024 |
+                                    Bhakti Dj Song by
+                                </div>
+                                <a href="" class="text-decoration-none text-dark"> Archana Records</a>
+                                <div>
+                                    <span>7,586 views</span>
+                                    <span>.</span>
+                                    <span> 2 weeks ago </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
