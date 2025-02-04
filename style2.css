@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Fixed Header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Main Layout */
+.main_container {
+  display: flex;
+  margin-top: 56px; /* To prevent overlap with fixed header */
+}
+
+/* Sidebar */
+.left_section {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  background: #fff;
+  overflow-y: auto;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+/* Collapsed Sidebar */
+.left_section.collapsed {
+  width: 72px;
+}
+
+.side_navbar .item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.side_navbar .item:hover {
+  background: #e5e5e5;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 240px;
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+/* When Sidebar is Collapsed */
+.main-content.collapsed {
+  margin-left: 72px;
+}
+
+/* Search Bar */
+.Form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.Form input {
+  width: 500px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.Form button {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.Form button:hover {
+  background: #e5e5e5;
+}
+
+/* Video Grid */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Video Card */
+.video-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .left_section {
+      width: 72px;
+  }
+
+  .main-content {
+      margin-left: 72px;
+  }
+
+  .Form input {
+      width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left_section {
+      display: none;
+  }
+
+  .main-content {
+      margin-left: 0;
+  }
+
+  .Form input {
+      width: 200px;
+  }
+}

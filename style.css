@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#darkModeToggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+
+}
+
+
 hr {
     color: #a19999;
 }
@@ -123,8 +137,8 @@ nav {
 
 .Form_item_3 {
     padding:5px 15px;
-
 }
+
 
 .Form_item_3 i{
     display: flex;
@@ -133,8 +147,8 @@ nav {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 1px solid #F8F8F8;
-    background-color: #F8F8F8;
+    /* border: 1px solid #F8F8F8; */
+    
 }
 
 nav .Nav_end {
